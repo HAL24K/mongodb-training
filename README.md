@@ -21,6 +21,14 @@ Start the `pipenv` shell with the following command
 $ pipenv shell
 ```
 
+## Env File
+
+Create a `.env` in the root of the repository with the following value
+
+```
+export MONGODB_URI=mongodb+srv://<username:<password>@<your-cluster>.mongodb.net/myTestDatabase?retryWrites=true&w=majority
+```
+
 ## Data Modelling
 
 The `data_modelling` directory contains the code for the data-modelling lesson. To run the application
