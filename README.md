@@ -139,3 +139,34 @@ Sample Stock Document
   "qty": 100
 }
 ```
+
+## Indexes and Explain Function
+
+MongoDb like most database can be indexed to improve query performance. MongoDb comes with tools to access query performace such as the
+[Explain](https://docs.mongodb.com/manual/reference/explain-results/) function.
+
+For more information about indexes see the documentation below
+
+[MongoDb Documentation](https://docs.mongodb.com/manual/core/index-compound/)
+[PyMongo Documentation](https://pymongo.readthedocs.io/en/stable/api/pymongo/collection.html#pymongo.collection.Collection.create_index)
+
+### Exercise 1
+
+The customer collection will be searched by the customer's first name and last name. Create an index on these fields. Hint: Use
+a [compound index](https://docs.mongodb.com/manual/core/index-compound/).
+
+First, run the query before applying the index and copy the results out.
+
+```python
+db.customers.find({"first_name": "John", "last_name": "Doe"}).explain()
+```
+
+Next, create the index following the [index creation documentation](https://pymongo.readthedocs.io/en/stable/api/pymongo/collection.html#pymongo.collection.Collection.create_index).
+
+Once the index is created, use the Explain function to see which index was used when running the query below.
+
+```python
+db.customers.find({"first_name": "John", "last_name": "Doe"}).explain()
+```
+
+Compare the Explain results of running the query with and without an index. What is different?
