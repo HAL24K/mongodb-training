@@ -88,7 +88,7 @@ The customer has two properties which need to be updated and saved back to the `
 update statement.
 
 Use the data below to insert a new customer and a new order. Note: when inserting the customer, the id of the new customer will
-be returned in the API response.
+be returned in the API response. Use this id when inserting a new order.
 
 #### Example Data
 
