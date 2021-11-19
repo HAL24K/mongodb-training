@@ -41,7 +41,7 @@ class BookBase(BaseModel):
     pages: int
     # Exercise 3 - add chapters documents. Hint: List[Chapters]
     chapters: Any
-    tags: List[str] = Field(default=[])
+    tags: List[str] = Field(default_factory=list)
 
 
 class BookAdd(BookBase):
@@ -50,7 +50,7 @@ class BookAdd(BookBase):
 
 class BookUpdate(BaseModel):
     name: str
-    tags: List[str] = Field(default=[])
+    tags: List[str] = Field(default_factory=list)
 
 
 class BookGet(BookBase):
