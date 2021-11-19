@@ -29,9 +29,9 @@ Create a `.env` in the root of the repository with the following value
 export MONGODB_URI=mongodb+srv://<username:<password>@<your-cluster>.mongodb.net/myTestDatabase?retryWrites=true&w=majority
 ```
 
-## Data Modelling
+## Data Modeling
 
-The `data_modelling` directory contains the code for the data-modelling lesson. To run the application
+The `data_modeling` directory contains the code for the data-modelling lesson. To run the application
 use the following command
 
 ```shell
