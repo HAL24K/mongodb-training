@@ -31,11 +31,11 @@ export MONGODB_URI=mongodb+srv://<username:<password>@<your-cluster>.mongodb.net
 
 ## Data Modeling
 
-The `data_modeling` directory contains the code for the data-modelling lesson. To run the application
+The `data_modeling` directory contains the code for the data-modeling lesson. To run the application
 use the following command
 
 ```shell
-$ uvicorn data_modelling.main:app --reload
+$ uvicorn data_modeling.main:app --reload
 ```
 
 This repo contains a [Postman](https://www.postman.com/downloads/) collection for testing the API called `Book API.postman_collection.json`.
