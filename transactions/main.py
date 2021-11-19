@@ -111,7 +111,7 @@ async def add_order(order: OrderAdd, client: MongoClient = Depends(get_client)):
 
             # Insert order
             order.total = total
-            result = orders.insert_one(order.dict())
+            result = orders.insert_one(order.dict(), session=session)
     return OrderAddResult(id=result.inserted_id)
 
 
