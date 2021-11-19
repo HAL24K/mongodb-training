@@ -4,7 +4,7 @@ Training material for MongoDb Cross-Team Training Day
 
 ## Prerequisites
 
-- [Python 3.8 or higher](https://www.python.org/downloads/release/python-380/)
+- [Python 3.9 or higher](https://www.python.org/downloads/release/python-390/)
 - [Pipenv](https://pipenv.pypa.io/en/latest/)
 
 ## Installation
