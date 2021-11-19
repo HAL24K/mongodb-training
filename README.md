@@ -87,7 +87,8 @@ This file can be imported into the Postman application.
 The customer has two properties which need to be updated and saved back to the `customers` collection. Add an appropriate
 update statement.
 
-Use the data below to insert a new customer and a new order.
+Use the data below to insert a new customer and a new order. Note: when inserting the customer, the id of the new customer will
+be returned in the API response.
 
 #### Example Data
 
