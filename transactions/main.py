@@ -10,7 +10,7 @@ from pydantic import BaseModel, Field
 from pymongo import MongoClient
 from pymongo.database import Database
 
-from data_modelling.library import ObjectIdField, DomainException, to_objectid_str
+from data_modeling.library import ObjectIdField, DomainException, to_objectid_str
 
 load_dotenv()
 
